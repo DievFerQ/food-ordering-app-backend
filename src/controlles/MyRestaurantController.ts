@@ -57,6 +57,7 @@ const updateMyRestaurant = async (req: Request, res: Response) => {
     restaurant.deliveryPrice = req.body.deliveryPrice;
     restaurant.estimatedDeliveryTime = req.body.estimatedDeliveryTime;
     restaurant.cuisines = req.body.cuisines;
+    restaurant.menuItems = req.body.menuItems;
     restaurant.lastUpdate = new Date();
 
     if (req.file) {
